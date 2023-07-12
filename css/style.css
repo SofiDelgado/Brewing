@@ -1,5 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif&display=swap');
 body{
     font-family: 'Roboto Condensed', sans-serif;
-
+    font-family: 'Road Rage', cursive;
+    font-family: 'Roboto Serif', serif;
+    /* Esto hace que el footer siempre este abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+.title-article{
+    font-weight: bold;
+}
+.description-article{
+    font-weight: 300;
+    font-size: small;
+}
+.tag-comment{
+    color: #FFAF39;
+    font-family: "Road Rage";
+    font-size: small;
+}
+.btn-more{
+    border: 1px solid #C78A30;
+}
+.btn-more:hover{
+    background-color: #C78A30;
+    border:#C78A30;
+    color: white;
 }
