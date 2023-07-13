@@ -1,8 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif&display=swap');
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Road Rage', cursive;
-    font-family: 'Roboto Serif', serif;
+   
     /* Esto hace que el footer siempre este abajo */
     display: flex;
     flex-direction: column;
@@ -23,13 +22,12 @@ main{
 }
 .description-article{
     font-weight: lighter;
-    font-size: small;
+    font-size:medium;
 }
 .tag-comment{
-    color: #FFAF39;
     font-family: "Road Rage";
-    font-size: small;
-    margin-bottom: 1rem;
+    color: #FFAF39;
+
 }
 .btn-more{
     border: 1px solid #C78A30;
@@ -37,6 +35,15 @@ main{
 }
 .btn-more:hover{
     background-color: #C78A30;
-    border:#C78A30;
+    border:1px solid #C78A30;
     color: white;
+}
+@media (max-width: 767.98px) {
+    
+    #img-publ{
+        display: none;
+    }
+}
+.btn-search{
+    background-color:#C78A30;
 }
