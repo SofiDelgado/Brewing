@@ -105,3 +105,121 @@ background-color:#FFAF39;
 }
 
 /* ---------- */
+
+/* GALERIA DE IMAGENES */
+#blogTitle,
+h2 {
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+}
+
+#blogTitle {
+    font-size: 390%;
+}
+
+#blogSub {
+    font-size: 270%;
+}
+
+#blogText {
+    font-size: 115%;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.commentText {
+    font-family: 'Road Rage', cursive;
+    font-size: 200%;
+}
+
+.buttonComment {
+    width: 20%;
+}
+
+.buttonText {
+    font-family: 'Road Rage', cursive;
+    font-size: 150%;
+    background-color: #c78a30;
+    color: white;
+}
+
+.buttonText:hover {
+    background-color: #ffaf39;
+}
+
+.articleCol2 {
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#articleLink {
+    text-align: center;
+    color: black;
+}
+
+#articleLink:hover {
+    color: #ffaf39;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.secondCol {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#formLine {
+    opacity: 0;
+    margin: 25px 0 0;
+}
+
+.secondCol::-webkit-scrollbar {
+    display: none;
+}
+
+.sendButton {
+        display: block;
+    }
+@media (max-width: 575.98px) {
+    .sendButton {
+        position: relative;
+        right: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #comment1,
+    #comment2,
+    #comment3,
+    #comment4,
+    #comment5 {
+        position: relative;
+        right: 10px;
+        margin-right: -2px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #blogTitle {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        right: 15px;
+    }
+}
+
+/* --------------------------- */
