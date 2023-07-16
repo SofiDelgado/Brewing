@@ -31,7 +31,7 @@ main{
 }
 .btn-more{
     border: 1px solid #C78A30;
-    font-family: "Roboto Condenced";
+    font-family: "Roboto Cdenconed";
 }
 .btn-more:hover{
     background-color: #C78A30;
@@ -41,9 +41,31 @@ main{
 @media (max-width: 767.98px) {
     
     #img-publ{
-        display: none;
+        display:none;
     }
 }
 .btn-search{
     background-color:#C78A30;
+}
+.font-Road{
+    font-family: "Road Rage";
+    font-size: 300%;
+    color: #C78A30;
+}
+#list{
+    
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+}
+.container-category{
+    height: 20%;
+}
+.page-item span{
+    background-color: #C78A30;
+    color: white;
+}
+.active-pag{
+    background-color: white;
+    color: black;
 }
