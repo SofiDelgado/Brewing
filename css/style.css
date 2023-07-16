@@ -69,3 +69,58 @@ main{
     background-color: white;
     color: black;
 }
+/* CSS DEL NAV */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    color : #FFAF39;
+   text-transform:capitalize;
+   
+    fill-opacity: inherit;
+   text-decoration-color: #FFAF39;
+   
+    height: 20%;
+    font-family: 'Road Rage', cursive;
+    font-size: 280%;
+    background-image: url(../img/banner.jpg);
+    display: flex;
+    align-items: end;
+}
+.nav-item:hover{
+    text-shadow: black 10px -5px 2px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+
+body {
+    height: 5000px;
+}
+
+    .logo {
+        height: 140px;
+        width: 200px;
+        }
+        @media (max-width: 987px) {
+            .logo {
+                width: 500 136px;
+            }
+        } */
+
+header {
+    color: #FFAF39;
+}
+
+.navbar-toggler {
+    background-color: #ffb039;
+    display: flex;
+    
+}  
+/* --------------------------------------- */
