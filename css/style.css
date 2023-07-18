@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif&display=swap');
 body{
     font-family: 'Roboto Condensed', sans-serif;
    
@@ -106,7 +106,7 @@ background-color:#FFAF39;
 
 /* ---------- */
 
-/* GALERIA DE IMAGENES */
+/* BLOG */
 
 #blogTitle,
 h2 {
@@ -172,15 +172,22 @@ form div {
     padding: 5px;
 }
 
-.secondCol {
+.firstColBlog {
+    position: relative;
+    top: 10px;
+}
+
+.secondColBlog {
     position: fixed;
+    width: 30%;
     overflow-y: scroll;
     overflow-x: hidden;
     right: 15px;
-    top: 0;
+    top: 90px;
     bottom: 0;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 
 #formLine {
@@ -188,7 +195,7 @@ form div {
     margin: 25px 0 0;
 }
 
-.secondCol::-webkit-scrollbar {
+.secondColBlog::-webkit-scrollbar {
     display: none;
 }
 
@@ -223,4 +230,167 @@ form div {
     }
 }
 
+@media (max-width: 991px) {
+    .secondColBlog {
+        position: fixed;
+        top: 65px;
+    }
+}
+
+@media (max-width: 991px) {
+    .firstColBlog {
+        position: relative;
+        top: 65px;
+    }
+}
+
+/* ---------- */
+
+/* CONTACTO */
+
+main {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#contactTitle,
+h2 {
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+}
+
+#contactTitle {
+    font-size: 400%;
+}
+
+.contactSub {
+    font-size: 250%;
+}
+
+.buttonText {
+    font-family: 'Road Rage', cursive;
+    font-size: 150%;
+    background-color: #c78a30;
+    color: white;
+}
+
+.buttonText:hover {
+    background-color: #ffaf39;
+}
+
+.articleCol2 {
+    margin-bottom: 35px;
+}
+
+#articleLink {
+    text-align: center;
+    color: black;
+}
+
+#articleLink:hover {
+    color: #ffaf39;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.firstColContact {
+    position: relative;
+    top: 10px;
+}
+
+.secondColContact {
+    position: absolute;
+    right: 15px;
+    top: 65%;
+    justify-content: center;
+    align-items: center;
+}   
+
+.imgCol2 {
+    position: relative;
+    left: 15%;
+    max-width: 100%;
+}
+
+.map {
+    max-width: 100%;
+}
+
+.sendButton {
+        display: block;
+    }
+
+@media (max-width: 575.98px) {
+    .sendButton {
+        position: relative;
+        right: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .firstColContact {
+        position: relative;
+        top: 65px;
+    }
+}
+
+/* FOOTER */
+.footer {
+    /*background-image: url(../img/diferenciacervezaalelager-3.jpg);*/
+    position: relative;
+ background-color: rgb(36, 25, 10);
+    width:  auto;
+    height: auto;
+}
+
+/* .logofooter {
+   height: 150px;
+   width: auto;
+
+} */
+.footertit {
+    font-family: 'Road Rage', cursive;
+    /*font-size: 400%;*/
+    text-shadow: black 4px 4px 4px;
+
+
+}
+
 /* --------------------------- */
+
+/* GALERIA DE IMAGENES */
+.bg-galery {
+    background-color: #e2b36d;
+}
+
+
+#galeria{
+  border: 1px solid #c78a30;
+  background-color: #f7f7f7;
+}
+
+.galeryBrewing{
+   font-family: "Road Rage";
+   font-weight: bolder;
+
+}
+
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 250px;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+/* ---------- */
