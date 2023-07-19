@@ -17,6 +17,11 @@ main{
     font-weight: bold;
     margin: 0.5rem 0 0 0;
 }
+.title-article-aboutus{
+    font-family: "Road Rage";
+    font-weight: bold;
+    margin: 0.5rem 0 0 0;
+}
 .date-author{
     font-size: small;
 }
@@ -38,12 +43,7 @@ main{
     border:1px solid #C78A30;
     color: white;
 }
-@media (max-width: 767.98px) {
-    
-    #img-publ{
-        display:none;
-    }
-}
+
 .btn-search{
     background-color:#C78A30;
 }
@@ -58,14 +58,16 @@ main{
     font-weight: bold;
     font-size: large;
 }
-.container-category{
-    height: 20%;
-}
-.page-item span{
+.page-item a{
     background-color: #C78A30;
     color: white;
 }
-.active-pag{
+.page-item a:hover{
+    background-color: white;
+    color: black;
+}
+
+.active-pag a{
     background-color: white;
     color: black;
 }
@@ -76,7 +78,7 @@ header {
 }
 .navbar{
     background-image: url(/img/banner.jpg);
-    position: fixed;
+  
     top: 0;
     width: 100%;
     color : #FFAF39;
@@ -98,8 +100,9 @@ header {
         position: sticky;
         top: 0;
       }
-    
-}
+      
+    }
+
 .navbar-toggler {
 background-color:#FFAF39;
 }
@@ -153,9 +156,7 @@ h2 {
     margin-bottom: 35px;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 #articleLink {
     text-align: center;
@@ -172,22 +173,15 @@ form div {
     padding: 5px;
 }
 
-.firstColBlog {
-    position: relative;
-    top: 10px;
-}
-
-.secondColBlog {
+.secondCol {
     position: fixed;
-    width: 30%;
     overflow-y: scroll;
     overflow-x: hidden;
     right: 15px;
-    top: 90px;
+    top: 0;
     bottom: 0;
     justify-content: center;
     align-items: center;
-    overflow: visible;
 }
 
 #formLine {
@@ -195,12 +189,28 @@ form div {
     margin: 25px 0 0;
 }
 
-.secondColBlog::-webkit-scrollbar {
+.secondCol::-webkit-scrollbar {
     display: none;
 }
 
 .sendButton {
         display: block;
+    }
+.cuadrado {
+
+    position: relative;
+    background-color: #FFAF39;
+  }
+  .fotitobirra{
+    position: relative;
+    bottom: 20%;
+    right: 38%;
+    
+  }
+
+    .fnosotros{
+        font-family: 'Road Rage', cursive;
+    
     }
 @media (max-width: 575.98px) {
     .sendButton {
@@ -230,132 +240,38 @@ form div {
     }
 }
 
-@media (max-width: 991px) {
-    .secondColBlog {
-        position: fixed;
-        top: 65px;
-    }
-}
-
-@media (max-width: 991px) {
-    .firstColBlog {
-        position: relative;
-        top: 65px;
-    }
-}
-
-/* ---------- */
-
 /* CONTACTO */
+.map-responsive{
 
-main {
-    font-family: 'Roboto Condensed', sans-serif;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
 
-#contactTitle,
-h2 {
-    font-family: 'Road Rage', cursive;
-    text-align: center;
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
 }
-
-#contactTitle {
-    font-size: 400%;
-}
-
-.contactSub {
-    font-size: 250%;
-}
-
-.buttonText {
-    font-family: 'Road Rage', cursive;
-    font-size: 150%;
-    background-color: #c78a30;
-    color: white;
-}
-
-.buttonText:hover {
-    background-color: #ffaf39;
-}
-
-.articleCol2 {
-    margin-bottom: 35px;
-}
-
-#articleLink {
-    text-align: center;
-    color: black;
-}
-
-#articleLink:hover {
-    color: #ffaf39;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-.firstColContact {
-    position: relative;
-    top: 10px;
-}
-
-.secondColContact {
-    position: absolute;
-    right: 15px;
-    top: 65%;
-    justify-content: center;
-    align-items: center;
-}   
-
-.imgCol2 {
-    position: relative;
-    left: 15%;
-    max-width: 100%;
-}
-
-.map {
-    max-width: 100%;
-}
-
-.sendButton {
-        display: block;
-    }
-
-@media (max-width: 575.98px) {
-    .sendButton {
-        position: relative;
-        right: 15px;
-    }
-}
-
-@media (max-width: 991px) {
-    .firstColContact {
-        position: relative;
-        top: 65px;
-    }
-}
+/* ---------- */
 
 /* FOOTER */
 .footer {
-    /*background-image: url(../img/diferenciacervezaalelager-3.jpg);*/
-    position: relative;
  background-color: rgb(36, 25, 10);
     width:  auto;
     height: auto;
 }
 
-/* .logofooter {
-   height: 150px;
-   width: auto;
 
-} */
+
 .footertit {
     font-family: 'Road Rage', cursive;
-    /*font-size: 400%;*/
     text-shadow: black 4px 4px 4px;
-
 
 }
 
@@ -364,6 +280,7 @@ form div {
 /* GALERIA DE IMAGENES */
 .bg-galery {
     background-color: #e2b36d;
+    
 }
 
 
@@ -379,14 +296,11 @@ form div {
 }
 
 
-#galeria .col-lg-4 {
-  margin: 0 !important;
-  padding: 25px;
-}
-
 #galeria img {
-  width: 100%;
-  height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que la imagen ocupe todo el espacio asignado */
+    border-radius: 5%;
 }
 
 #galeria img:hover {
