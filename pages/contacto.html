@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Enzo Campos" />
+    <meta name="description" content="Contacto de Brewingbeer" />
+    <meta
+      name="keywords"
+      content="Cerveza, Espuma, Cebada, Centeno, Birra, Contacto, Brewingbeer, Brewing, Beer"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/11dd514de6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../img/brewing-Logo.png" type="image/png" />
+    <title>Contáctanos</title>
+  </head>
+  <body>
+    <header class="navbar  navbar-expand-lg">
+      <nav class=" container-fluid d-flex">
+        <a class="navbar-brand d-none d-lg-block" href="/index.html">
+          <img
+            class="logo img-fluid w-25"
+            src="/img/brewing-Logo.png"
+            alt="Brewing"
+          />
+        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCerveceria"
+            aria-controls="navbarCerveceria"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+        <div class="collapse navbar-collapse justify-content-end w-100" id="navbarCerveceria">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-warning"
+                aria-current="page"
+                href="/index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="/pages/galery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="/pages/aboutUs.html">Nosotros</a>
+            </li>
+          </ul>
+          <a role="button" class="btn btn-warning btn-lg ms-lg-5" href="/pages/login.html">
+            Login
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container my-5">
+        <div class="row">
+          <article class="col-md-7 mb-3 p-3 border border-1 border-warning firstColContact">
+            <h1 id="contactTitle">Contáctanos</h1>
+            <div>
+              <img
+                src="../img/ccc-personas-brindando.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2 class="mt-4 mb-4 contactSub">¿Dónde encontrarnos?</h2>
+              <p class="map-responsive text-center">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14240.408879082126!2d-65.2072018!3d-26.8367009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1689537203886!5m2!1ses-419!2sar"
+                  class="w-100"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
+            </div>
+            <hr />
+            <hr />
+            <section class="container">
+              <article class="row">
+                <h2 class="contactSub">
+                  Consultanos mediante los siguientes medios
+                </h2>
+                <div class="text-center">
+                  <p>Horarios de Atención</p>
+                  <p>Lunes a Viernes 9hs a 13hs y 17hs a 21hs</p>
+                  <p>Sábados 9hs a 13hs</p>
+                </div>
+                <table class="mt-5 d-flex justify-content-center">
+                  <tbody>
+                    <tr>
+                      <th>
+                        <i class="fa-2x fa-brands fa-whatsapp me-3"></i>
+                      </th>
+                      <td>
+                        <h4>+54 381 0000000</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <i class="fa-2x fa-solid fa-phone"></i>
+                      </th>
+                      <td>
+                        <h4>+54 381 0000000</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <i class="fa-2x fa-solid fa-envelope"></i>
+                      </th>
+                      <td>
+                        <h4>brewingbeer@gmail.com</h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+            </section>
+            <form>
+              <h2 class="bg-black text-light mt-5">
+                O contáctanos directamente
+              </h2>
+              <div class="mt-5 mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  aria-describedby="emailHelp"
+                  minlength="10"
+      maxlength="60"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      required
+                />
+                <div id="emailHelp" class="form-text">
+                  No compartiremos tu dirección mail con nadie.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="consulta" class="form-label"
+                  >Consulta</label
+                >
+                <textarea
+                  class="form-control"
+                  id="consulta"
+                  rows="3"
+                  minlength="20" required
+                  maxlength="300"
+                ></textarea>
+              </div>
+              <div class="d-flex">
+                <button type="submit" class="btn btn-warning buttonText w-25 align-self-end">
+                  Enviar
+                </button>
+
+              </div>
+            </form>
+          </article>
+          <div class="d-none d-sm-none d-md-block col-md-5 secondColContact">
+            <div class="colContact">
+              <img
+                src="../img/51V6iiabNML._AC_UF894,1000_QL80_.jpg "
+                class="imgCol2"
+                style="width: 90%; height: auto"
+                alt="Jarra de cerveza"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="footer text-white  pt-5 pb-4 footer-expand-xxs">
+    <section class="container">
+      <article class="d-flex justify-content-around">
+        <div class="row">
+                  <!--LOGO DE FOOTER-->
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center pt-4">
+          <a href="/index.html">
+            <img src="../img/brewing-Logo.png" class="logofooter"width="250px" height="auto" alt="BrewingLogo">
+          </a>
+        </div>
+        
+      <!-- REDES SOCIALES -->
+      <div class="redesSociales col-lg-4 col-md-6 col-sm-12 text-center pt-5">
+        <h4 class="redes fs-5">Nuestras redes</h4>
+        <div class="redes mt-4 mb-5">
+          <div class="row">
+            <a href="https://www.facebook.com/groups/350495635780545" target="_blank"> 
+          <i class="fa-brands fa-facebook px-1 mb-2  fs-2"  style="color: #ecc139;"> </i>
+        </a>
+          <a href="https://www.instagram.com/brewingarg/" target="_blank"><i class="fa-brands fa-instagram px-1 my-2  fs-2" style="color:#ecc139"> </i>
+          </a>
+          <a href="https://www.youtube.com/@JusBrewing" target="_blank">
+          <i class="fa-brands fa-youtube px-1 py-1 fs-2" style="color: #ecc139;"> </i>
+        </a>
+        </div>
+        </div>
+        </ul>
+
+      </div>
+
+      <!-- TODOS LOS DERECHOS RESERVADOS, PROHIBIDA LA VENTA A MENORES DE 18 AÑOS -->
+    <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
+      <h4 class="footertit text-center fs-1 pb-4">Brewing</h4>
+      <p class="text-center">
+        Brewing les recuerda a los lectores de este blog que la ingesta de alcohol debe ser moderada y que la venta de bebidas alcohólicas se encuentra prohibida a menores de 18 años de edad.
+      </p>
+    </div>
+    </div>
+        
+      </article>
+    </section>
+  </footer>
+  <script src="js/bootstrap.min.js"></script>
+</html>

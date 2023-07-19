@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+   
+    /* Esto hace que el footer siempre este abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+.border-article{
+    border: 1px solid #C78A30;
+}
+.title-article{
+    font-weight: bold;
+    margin: 0.5rem 0 0 0;
+}
+.title-article-aboutus{
+    font-family: "Road Rage";
+    font-weight: bold;
+    margin: 0.5rem 0 0 0;
+}
+.date-author{
+    font-size: small;
+}
+.description-article{
+    font-weight: lighter;
+    font-size:medium;
+}
+.tag-comment{
+    font-family: "Road Rage";
+    color: #FFAF39;
+
+}
+.btn-more{
+    border: 1px solid #C78A30;
+    font-family: "Roboto Cdenconed";
+}
+.btn-more:hover{
+    background-color: #C78A30;
+    border:1px solid #C78A30;
+    color: white;
+}
+
+.btn-search{
+    background-color:#C78A30;
+}
+.font-Road{
+    font-family: "Road Rage";
+    font-size: 300%;
+    color: #C78A30;
+}
+#list{
+    
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+}
+.page-item a{
+    background-color: #C78A30;
+    color: white;
+}
+.page-item a:hover{
+    background-color: white;
+    color: black;
+}
+
+.active-pag a{
+    background-color: white;
+    color: black;
+}
+
+/* NAV */
+header {
+    z-index: 3;
+}
+.navbar{
+    background-image: url(/img/banner.jpg);
+  
+    top: 0;
+    width: 100%;
+    color : #FFAF39;
+    font-family: 'Road Rage', cursive;
+    font-size: xx-large;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.nav-item:hover{
+    text-shadow: black 10px -5px 2px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+@media (min-width: 992px){
+    .navbar {
+        width: 100%;
+        position: sticky;
+        top: 0;
+      }
+      
+    }
+
+.navbar-toggler {
+background-color:#FFAF39;
+}
+
+/* ---------- */
+
+/* BLOG */
+
+#blogTitle,
+h2 {
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+}
+
+#blogTitle {
+    font-size: 390%;
+}
+
+#blogSub {
+    font-size: 270%;
+}
+
+#blogText {
+    font-size: 115%;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.commentText {
+    font-family: 'Road Rage', cursive;
+    font-size: 200%;
+}
+
+.buttonComment {
+    width: 20%;
+}
+
+.buttonText {
+    font-family: 'Road Rage', cursive;
+    font-size: 150%;
+    background-color: #c78a30;
+    color: white;
+}
+
+.buttonText:hover {
+    background-color: #ffaf39;
+}
+
+.articleCol2 {
+    margin-bottom: 35px;
+}
+
+
+
+#articleLink {
+    text-align: center;
+    color: black;
+}
+
+#articleLink:hover {
+    color: #ffaf39;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.secondCol {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#formLine {
+    opacity: 0;
+    margin: 25px 0 0;
+}
+
+.secondCol::-webkit-scrollbar {
+    display: none;
+}
+
+.sendButton {
+        display: block;
+    }
+.cuadrado {
+
+    position: relative;
+    background-color: #FFAF39;
+  }
+  .fotitobirra{
+    position: relative;
+    bottom: 20%;
+    right: 38%;
+    
+  }
+
+    .fnosotros{
+        font-family: 'Road Rage', cursive;
+    
+    }
+@media (max-width: 575.98px) {
+    .sendButton {
+        position: relative;
+        right: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #comment1,
+    #comment2,
+    #comment3,
+    #comment4,
+    #comment5 {
+        position: relative;
+        right: 10px;
+        margin-right: -2px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #blogTitle {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        right: 15px;
+    }
+}
+
+/* CONTACTO */
+.map-responsive{
+
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+/* ---------- */
+
+/* FOOTER */
+.footer {
+ background-color: rgb(36, 25, 10);
+    width:  auto;
+    height: auto;
+}
+
+
+
+.footertit {
+    font-family: 'Road Rage', cursive;
+    text-shadow: black 4px 4px 4px;
+
+}
+
+/* --------------------------- */
+
+/* GALERIA DE IMAGENES */
+.bg-galery {
+    background-color: #e2b36d;
+    
+}
+
+
+#galeria{
+  border: 1px solid #c78a30;
+  background-color: #f7f7f7;
+}
+
+.galeryBrewing{
+   font-family: "Road Rage";
+   font-weight: bolder;
+
+}
+
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que la imagen ocupe todo el espacio asignado */
+    border-radius: 5%;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+/* ---------- */
