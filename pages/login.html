@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Login Follow link (cmd + click)</title>
+</head>
+
+  </head>
+  <body>
+    <main>
+      <header class="navbar  navbar-expand-lg">
+        <nav class=" container-fluid d-flex">
+          <a class="navbar-brand d-none d-lg-block" href="/index.html">
+            <img
+              class="logo img-fluid w-25"
+              src="/img/brewing-Logo.png"
+              alt="Brewing"
+            />
+          </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCerveceria"
+              aria-controls="navbarCerveceria"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+  
+  
+          <div class="collapse navbar-collapse justify-content-end w-100" id="navbarCerveceria">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-warning"
+                  aria-current="page"
+                  href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="/pages/galery.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="/pages/aboutUs.html">Nosotros</a>
+              </li>
+            </ul>
+            <a role="button" class="btn btn-warning btn-lg ms-lg-5" href="/pages/login.html">
+              Login
+            </a>
+          </div>
+        </nav>
+      </header>
+      <section class="container border-article my-5">
+        <article class="row">
+          <div class="col-lg-7 col-sm-12">
+            <h1 class=" fw-bold">LOGIN</h1>
+            <form class="tipografiaform">
+                <label for="mail" class="form-label"
+                  >Correo electronico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="mail"
+                  aria-describedby="emailHelp"
+                  minlength="10"
+                  maxlength="60"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  required
+                />
+                <p class="tipografiaform-p opacity-50">
+                  Nunca compartiremos tu correo electrónico con nadie.
+                </p>
+                <div>
+
+                  <div class="google-login-btn my-3">
+                    <span class="google-icon"></span>
+                    <span class="btn-text">Iniciar sesión con Google</span>
+                </div>
+                <div class="facebook-login-btn my-3">
+                  <span class="facebook-icon"></span>
+                  <span class="btn-text">Iniciar sesión con Facebook</span>
+                </div>
+                </div>
+              <div class=" mb-3">
+                <label for="password" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  pattern=".{8,}"
+                />
+              </div>
+              <div class="">
+                <a
+                  type="button"
+                  class=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#password"
+                  >Has olvidado tu contraseña</a
+                >
+              </div>
+              
+              <div
+                class="modal fade"
+                id="password"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="passwordModalLabel">Modal title</h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">Cambiar contraseña</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="d-none d-sm-none d-md-block col-lg-5 col-sm-12">
+            <div class="">
+              <img
+              src="../img/hero_footer_beer_01.jpg"
+              class="img-fluid my-5"
+              alt="brewing-Logo"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer text-white  pt-5 pb-4 footer-expand-xxs">
+      <section class="container">
+        <article class="d-flex justify-content-around">
+          <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center pt-4">
+            <a href="/index.html">
+              <img class="logofooter" src="/img/brewing-Logo.png" width="250px" height="auto" alt="BrewingLogo">
+            </a>
+          </div>
+  
+        <div class="redesSociales col-lg-4 col-md-6 col-sm-12 text-center pt-5">
+          <h4 class="redes fs-5">Nuestras redes</h4>
+          <div class="redes mt-4 mb-5">
+            <div class="row">
+              <a href="https://www.facebook.com/groups/350495635780545" target="_blank"> 
+            <i class="fa-brands fa-facebook px-1 mb-2  fs-2"  style="color: #ecc139;"> </i>
+          </a>
+            <a href="https://www.instagram.com/brewingarg/" target="_blank"><i class="fa-brands fa-instagram px-1 my-2  fs-2" style="color:#ecc139"> </i>
+            </a>
+            <a href="https://www.youtube.com/@JusBrewing" target="_blank">
+            <i class="fa-brands fa-youtube px-1 py-1 fs-2" style="color: #ecc139;"> </i>
+          </a>
+          </div>
+          </div>
+          </ul>
+  
+        </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
+        <h4 class="footertit text-center fs-1 pb-4">Brewing</h4>
+        <p class="text-center">
+          Brewing les recuerda a los lectores de este blog que la ingesta de alcohol debe ser moderada y que la venta de bebidas alcohólicas se encuentra prohibida a menores de 18 años de edad.
+        </p>
+      </div>
+      </div>
+          
+        </article>
+      </section>
+    </footer>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" async defer crossorigin="anonymous"></script>
+  </body>
+  <script src="/js/bootstrap.min.js"></script>
+</html>

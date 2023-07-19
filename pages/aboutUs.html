@@ -7,70 +7,86 @@
     <meta name="description" content="blog sobre cerveza, vinos, tragos" />
     <meta name="author" content="Brewing" />
     <meta name="keywords" content="Cerveza, tragos, vinos" />
+    <!-- LINK BOOTSTRAP -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/img/brewing-Logo.png" type="image/png" />
+    <!-- iconos de fontawesome-->
     <script
       src="https://kit.fontawesome.com/983fa9e31f.js"
       crossorigin="anonymous"
     ></script>
+
     <title>AboutUs</title>
   </head>
   <body>
-    <header class="navbar  navbar-expand-lg">
-      <nav class=" container-fluid d-flex">
-        <a class="navbar-brand d-none d-lg-block" href="/index.html">
+    <header class="navbar navbar-expand-lg">
+      <nav class="container-fluid d-flex">
+        <a class="navbar-brand d-none d-lg-block" href="../index.html">
           <img
             class="logo img-fluid w-25"
-            src="/img/brewing-Logo.png"
+            src="../img/brewing-Logo.png"
             alt="Brewing"
           />
         </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCerveceria"
-            aria-controls="navbarCerveceria"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <!-- BOTON TOGGLER -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCerveceria"
+          aria-controls="navbarCerveceria"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
 
-
-        <div class="collapse navbar-collapse justify-content-end w-100" id="navbarCerveceria">
+        <div
+          class="collapse navbar-collapse justify-content-end w-100"
+          id="navbarCerveceria"
+        >
+          <!-- BOTONES DE NAVBAR -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
                 class="nav-link active text-warning"
                 aria-current="page"
-                href="/index.html"
+                href="../index.html"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="/pages/galery.html">Galería</a>
+              <a class="nav-link text-warning" href="../pages/galery.html"
+                >Galería</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="/pages/contacto.html">Contacto</a>
+              <a class="nav-link text-warning" href="#">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="/pages/aboutUs.html">Nosotros</a>
+              <a class="nav-link text-warning" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Suscribirse</a>
             </li>
           </ul>
-          <a role="button" class="btn btn-warning btn-lg ms-lg-5" href="/pages/login.html">
+          <button type="button" class="btn btn-warning btn-lg ms-4 me-5">
             Login
-          </a>
+          </button>
         </div>
       </nav>
     </header>
     <main>
-        <div class="container border-article my-5">
+      <!-- slider -->
+      <!-- sobre nosotros -->
+      <section class="container">
+        <div class="container border-article px-5 my-3 py-3">
           <div class="row">
-            <article class="col-lg-6 col-md-12  ">
+            <article class="quienes-somos col-lg-6 col-md-6  ">
               <h3 class="title-article mb-3">¿Quiénes somos?</h3>
-              <p class="description-article fs-4 text-center">
+              <p class="description-article fs-4">
                 Brewing es un proyecto independiente sin fines de lucro surgido
                 a principios del año 2020, en la ciudad argentina de San Miguel de Tucumán, conformado por un equipo de cuatro
                 personas, Sofia Delgado, Enzo Campos, Lucas Blanco y Pablo Maidana,
@@ -82,11 +98,11 @@
                 18 años de edad.
               </p>
             </article>
-            <article class="fotito col-lg-6 col-md-12 text-center">
-              <div class="cuadrado border-article mt-3">
+            <article class="fotito col-lg-6 col-md-12  text-center">
+              <div class="cuadrado border-article">
                 <img src="../img/brewing-Logo.png" width="90%" height="auto" alt="logo">
               </div>
-              <img class="fotitobirra d-none d-sm-none d-md-none d-lg-block"
+              <img class="fotitobirra"
                 src="../img/stout-cerveza-receta.png"
                 width="80%"
                 height="auto"
@@ -95,88 +111,116 @@
             </article>
             <hr>
             <article class="nosotros col-lg-12 col-md-12 p-3">
-              <h3 class="title-article-aboutus mb-3 text-center fs-1">Nosotros</h3>
+              <h3 class="title-article mb-3 text-center fs-1">Nosotros</h3>
               <div class="row">
                 <article class="sofi col-lg-6 col-md6 col-sm-12 my-5 text-center">
                   <h4 class="fnosotros  fs-2">Sofia Delgado</h4>
                   <img
-                    src="../img/sofi.jpeg"
-                    class="img-fluid rounded-5 "
+                    src="../img/sofi.jpg"
+                    class="rounded-circle"
                     width="250px"
-                    height="80%"
+                    height="auto"
                     alt="sofi"
                   />
                 </article>
                 <article class="enzo col-lg-6 col-md6 col-sm-12 my-5 text-center">
                   <h4 class="fnosotros fs-2">Enzo Campos</h4>
                   <img
-                    src="../img/enzo.jpeg"
-                    class="img-fluid rounded-5"
+                    src="../img/enzo.jpg"
+                    class="rounded-circle"
                     width="250px"
                     height="auto"
                     alt="enzo"
                   />
                 </article>
-                <article class="enzo col-lg-6 col-md6 col-sm-12 my-5 text-center">
-                  <h4 class="fnosotros fs-2">Enzo Campos</h4>
+                <article class="lucas col-lg-6 col-md6 col-sm-12 my-5 text-center">
+                  <h4 class="fnosotros fs-2">Lucas Blanco</h4>
                   <img
                     src="../img/lucas.jpg"
-                    class="img-fluid rounded-5"
+                    class="rounded-circle"
                     width="250px"
                     height="auto"
                     alt="lucas"
                   />
                 </article>
-                <article class="enzo col-lg-6 col-md6 col-sm-12 my-5 text-center">
-                  <h4 class="fnosotros fs-2">Enzo Campos</h4>
+                <article class="pablo col-lg-6 col-md6 col-sm-12 my-5 text-center">
+                  <h4 class="fnosotros fs-2">Pablo Maidana</h4>
                   <img
-                    src="../img/usuario.jpg"
-                    class=""
+                    src="../img/pablo-jpg.jpg"
+                    class="rounded-circle"
                     width="250px"
                     height="auto"
-                    alt="enzo"
+                    alt="pablo"
                   />
                 </article>
               </div>
             </article>
           </div>
         </div>
+      </section>
     </main>
-    <footer class="footer text-white  pt-5 pb-4 footer-expand-xxs">
+    <footer class="footer text-white pt-5 pb-4 footer-expand-xs">
       <section class="container">
         <article class="d-flex justify-content-around">
           <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center pt-4">
-            <a href="/index.html">
-              <img class="logofooter" src="/img/brewing-Logo.png" width="250px" height="auto" alt="BrewingLogo">
-            </a>
-          </div>
+            <!--LOGO DE FOOTER-->
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center pt-4">
+              <img
+                class="logofooter"
+                src="../img/brewing-Logo.png"
+                width="250px"
+                height="auto"
+                alt="BrewingLogo"
+              />
+            </div>
 
-        <div class="redesSociales col-lg-4 col-md-6 col-sm-12 text-center pt-5">
-          <h4 class="redes fs-5">Nuestras redes</h4>
-          <div class="redes mt-4 mb-5">
-            <div class="row">
-              <a href="https://www.facebook.com/groups/350495635780545" target="_blank"> 
-            <i class="fa-brands fa-facebook px-1 mb-2  fs-2"  style="color: #ecc139;"> </i>
-          </a>
-            <a href="https://www.instagram.com/brewingarg/" target="_blank"><i class="fa-brands fa-instagram px-1 my-2  fs-2" style="color:#ecc139"> </i>
-            </a>
-            <a href="https://www.youtube.com/@JusBrewing" target="_blank">
-            <i class="fa-brands fa-youtube px-1 py-1 fs-2" style="color: #ecc139;"> </i>
-          </a>
-          </div>
-          </div>
-          </ul>
+            <!-- REDES SOCIALES -->
+            <div
+              class="redesSociales col-lg-4 col-md-6 col-sm-12 text-center pt-5"
+            >
+              <h4 class="redes fs-5">Nuestras redes</h4>
+              <div class="redes mt-4 mb-5">
+                <div class="row">
+                  <a
+                    href="https://www.facebook.com/groups/350495635780545"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-facebook px-1 mb-2 fs-2"
+                      style="color: #ecc139"
+                    >
+                    </i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/brewingarg/"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-instagram px-1 my-2 fs-2"
+                      style="color: #ecc139"
+                    >
+                    </i>
+                  </a>
+                  <a href="https://www.youtube.com/@JusBrewing" target="_blank">
+                    <i
+                      class="fa-brands fa-youtube px-1 py-1 fs-2"
+                      style="color: #ecc139"
+                    >
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-        </div>
-      <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
-        <h4 class="footertit text-center fs-1 pb-4">Brewing</h4>
-        <p class="text-center">
-          Brewing les recuerda a los lectores de este blog que la ingesta de alcohol debe ser moderada y que la venta de bebidas alcohólicas se encuentra prohibida a menores de 18 años de edad.
-        </p>
-      </div>
-      </div>
-          
+            <!-- TODOS LOS DERECHOS RESERVADOS, PROHIBIDA LA VENTA A MENORES DE 18 AÑOS -->
+            <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
+              <h4 class="footertit text-center fs-1 pb-4">Brewing</h4>
+              <p class="text-center">
+                Brewing les recuerda a los lectores de este blog que la ingesta
+                de alcohol debe ser moderada y que la venta de bebidas
+                alcohólicas se encuentra prohibida a menores de 18 años de edad.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
     </footer>
